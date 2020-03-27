@@ -1,0 +1,9 @@
+def chocolateFeast(n, c, m):
+    choco = n//c
+    wrapp = choco
+    while wrapp//m != 0:               #1
+        a=wrapp//m
+        choco += a
+        rem = wrapp%m
+        wrapp = rem + a
+    return choco
